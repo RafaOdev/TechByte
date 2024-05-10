@@ -1,0 +1,150 @@
+.main__news__slides{
+    height: 110vh;
+    width: 100vw;
+    margin-top: -80px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+.main__news__slides .main__slides{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__news__slides .main__slides article{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    clip-path: circle(0% at 0 50%);
+}
+
+.main__news__slides .main__slides article.activate{
+    clip-path: circle(150% at 0 50%);
+    transition: 1s;
+    transition-property: clip-path;
+}
+
+.main__news__slides .main__slides article img{
+    filter: brightness(0.55);
+}
+
+.main__news__slides .main__slides article .news__content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 800px;
+    min-height: 400px;
+    left: 20%;
+    margin-top: 100px;
+    text-shadow: 0 10px 10px #0004;
+}
+
+.main__news__slides .main__slides article .news__content .tag{
+    border-left: 3px solid red;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s linear;
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 25px;
+}
+
+.main__news__slides .main__slides article .news__content .tag:hover{
+    background-color: red;
+}
+
+.main__news__slides .main__slides article .news__content .title{
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    overflow: hidden;
+    max-width: 800px;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 4rem;
+    letter-spacing: 2.5px;
+    padding: 10px 0;
+}
+
+
+.main__news__slides .main__slides article .news__content .desc{
+    color: white;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    overflow: hidden;
+    max-width: 800px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    padding: 20px 0;
+}
+
+.main__news__slides .main__slides article .news__content .desc:hover{
+    text-decoration: underline red;
+}
+
+.main__news__slides .main__slides article .news__content .news__creator{
+    border-top: 1px solid white;
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.main__news__slides .main__slides article .news__content .news__creator .news__author{
+    color: white;
+    padding: 0 50px;
+}
+
+.main__news__slides .main__slides article .news__content .news__creator .news__author a{
+    color: white;
+    height: 20px;
+    text-decoration: none;
+    border-bottom: 3px solid white;
+    transition: 0.3s linear;
+}
+
+.main__news__slides .main__slides article .news__content .news__creator .news__author a:hover{
+    border-bottom: 3px solid red;
+}
+
+.main__news__slides .main__slides article .news__content .news__creator .news__day{
+    color: white;
+    padding: 0 50px;
+    margin-left: 40%;
+}
+
+.main__news__slides .main__slides .navigation{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 90%;
+}
+
+.main__news__slides .main__slides .navigation button{
+    background-color: gray;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.main__news__slides .main__slides .navigation button:hover{
+    background-color: rgb(180, 180, 180);
+}
+
+.main__news__slides .main__slides .navigation button.activate{
+    background-color: white;
+}

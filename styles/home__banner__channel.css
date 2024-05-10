@@ -1,0 +1,27 @@
+main .home__banner__channel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-height: 50vh;
+    width: 100%;
+}
+
+main .home__banner__channel .container{
+    display: flex;
+    flex-direction: column;
+    width: 57.4vw;
+}
+
+main .home__banner__channel .container .videos__channel{
+    margin-top: 50px;
+}
+
+
+main .home__banner__channel .container .videos__channel h4{
+    font-size: 2rem;
+    font-weight: 900;
+    width: 100px;
+    font-family: "Freeman", sans-serif;
+    text-transform: uppercase;
+}
