@@ -1,0 +1,14 @@
+{
+  "name": "techbyte",
+  "version": "1.0.0",
+  "description": "technology news website",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "Rafael",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
