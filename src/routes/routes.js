@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/news', (req, res) => {
+router.get('techbyte.blog/news', (req, res) => {
     res.send('In construction...');
 })
 
