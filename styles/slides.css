@@ -1,6 +1,6 @@
 .main__news__slides{
     height: 110vh;
-    width: 100vw;
+    width: 100%;
     margin-top: -80px;
     overflow: hidden;
     position: relative;
@@ -58,7 +58,7 @@
     transition: .3s linear;
     position: absolute;
     top: 0;
-    width: 100px;
+    width: 85px;
     height: 25px;
 }
 
