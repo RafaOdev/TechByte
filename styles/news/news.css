@@ -2,6 +2,7 @@ main .main__news__image{
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: center;
     position: relative;
     width: 100%;
     height: 99vh;
@@ -112,7 +113,7 @@ main .container .news__content__left .news__content__text p{
     padding: 20px 0;
     width: 100%;
     font-size: 1.23rem;
-    font-family: "Ubuntu Sans", sans-serif;
+    font-family: "Lato", sans-serif;
     line-height: 2rem;
     
 }
@@ -134,11 +135,17 @@ main .container .news__content__left .news__creator .image__creator{
     height: 110px;
     margin-top: 10px;
     border-radius: 100%;
+    overflow: hidden;
     border: none;
 }
 
 main .container .news__content__left .news__creator .image__creator img{
     border-radius: 100%;
+    transition: .1s linear;
+}
+
+main .container .news__content__left .news__creator .image__creator img:hover{
+    transform: scale(1.1);
 }
 
 main .container .news__content__left .news__creator .data__creator{
@@ -162,16 +169,16 @@ main .container .news__content__left .news__creator .data__creator .email__creat
 }
 
 main .container .news__content__left .share__content{
-    position: absolute;
     padding: 20px 0;
-    bottom: 5px;
-    right: 5%;
+    margin-top: -80px;
+    margin-left: 75%;
 }
 
 
 main .container .news__content__left .share__content a{
     margin: 10px;
     font-size: 1.5rem;
+    transition: .1s linear;
 }
 
 .publi__content{
