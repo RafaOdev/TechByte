@@ -242,7 +242,7 @@
   }
 }
 
-@media  (min-width: 57.1875em) and (max-width: 64em) {
+@media  (min-width: 50em) and (max-width: 100em) {
   /*header*/
   header .header__namepage {
       position: absolute;
