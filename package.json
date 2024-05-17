@@ -1,0 +1,17 @@
+{
+  "name": "techbyte",
+  "version": "1.0.0",
+  "description": "technology news website",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js",
+    "dataBase": "node ./src/services/mySql.js",
+    "page": "node ./scripts/article__creation.js"
+  },
+  "author": "Rafael",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mysql2": "^3.9.7"
+  }
+}

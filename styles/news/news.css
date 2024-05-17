@@ -1,0 +1,187 @@
+main .main__news__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 99vh;
+}
+
+main .main__news__image .news__image{
+    width: 100%;
+    height: 100%;
+}
+
+main .main__news__image .news__image img{
+    filter: brightness(0.55);
+}
+
+main .main__news__image .content__image{
+    position: absolute;
+    width: 800px;
+    left: 20%;
+    text-shadow: 0 10px 10px #0004;
+}
+
+main .main__news__image .content__image .news__tag{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s linear;
+    border-left: 3px solid red;
+    width: 80px;
+    height: 25px;
+}
+
+main .main__news__image .content__image .news__tag:hover{
+    background-color: red;
+}
+
+main .main__news__image .content__image .title{
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    overflow: hidden;
+    max-width: 800px;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 4rem;
+    letter-spacing: 2.5px;
+    padding: 10px 0;
+}
+
+main .main__news__image .content__image .desc{
+    color: white;
+    font-family: "Ubuntu Sans", sans-serif;
+    font-optical-sizing: auto;
+    overflow: hidden;
+    max-width: 800px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    padding: 20px 0;
+}
+
+main .main__news__image .content__image .content__creator{
+    border-top: 1px solid white;
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+}
+
+main .main__news__image .content__image .content__creator span{
+    color: white;
+}
+
+main .main__news__image .content__image .content__creator .creator{
+    padding: 0 50px;
+}
+
+main .main__news__image .content__image .content__creator .name__creator{
+    color: white;
+}
+
+main .main__news__image .content__image .content__creator .data{
+    padding: 0 50px;
+    margin-left: 40%;
+}
+
+/*container news*/
+
+main .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+main .container{
+    display: flex;
+    overflow: hidden;
+    width: 60%;
+}
+
+main .container .news__content__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 75%;
+}
+
+main .container .news__content__left .news__content__text p{
+    padding: 20px 0;
+    width: 100%;
+    font-size: 1.23rem;
+    font-family: "Lato", sans-serif;
+    line-height: 2rem;
+    
+}
+
+main .container .news__content__left .news__content__text .attachment{
+    width: 90%;
+}
+
+main .container .news__content__left .news__creator{
+    width: 40%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+main .container .news__content__left .news__creator .image__creator{
+    width: 110px;
+    height: 110px;
+    margin-top: 10px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: none;
+}
+
+main .container .news__content__left .news__creator .image__creator img{
+    border-radius: 100%;
+    transition: .1s linear;
+}
+
+main .container .news__content__left .news__creator .image__creator img:hover{
+    transform: scale(1.1);
+}
+
+main .container .news__content__left .news__creator .data__creator{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .container .news__content__left .news__creator .data__creator .name__creator{
+    text-transform: uppercase;
+    font-family: "Ubuntu Sans", sans-serif;
+}
+
+main .container .news__content__left .news__creator .data__creator .name__creator:hover{
+    color: red;
+}
+
+main .container .news__content__left .news__creator .data__creator .email__creator{
+    padding: 10px 0;
+    font-family: "Ubuntu Sans", sans-serif;
+}
+
+main .container .news__content__left .share__content{
+    padding: 20px 0;
+    margin-top: -80px;
+    margin-left: 75%;
+}
+
+
+main .container .news__content__left .share__content a{
+    margin: 10px;
+    font-size: 1.5rem;
+    transition: .1s linear;
+}
+
+.publi__content{
+    background-color: black;
+    width: 25%;
+}
