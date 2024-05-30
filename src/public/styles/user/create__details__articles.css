@@ -16,6 +16,7 @@ main .content__main .container .box__creator .top__box .button__details button{
     border: none;
     height: 50px;
     cursor: pointer;
+    justify-content: center;
     background-color: transparent;
     color: rgba(255,255,255,0.7);
     font-size: 1.02rem;
@@ -26,31 +27,41 @@ main .content__main .container .box__creator .top__box .button__details button.a
     color: rgb(255, 55, 55);
 }
 
-main .content__main .container .box__creator .content__details{
+main .content__main .container .box__creator .content{
     display: flex;
     flex-direction: column;
 }
 
-main .content__main .container .box__creator .content__details .text{
+main .content__main .container .box__creator .content .text{
     display: flex;
     flex-direction: column;
     padding: 20px 0;
 }
 
-main .content__main .container .box__creator .content__details .text h2{
+main .content__main .container .box__creator .content .text h2{
     color: white;
     font-size: 1.1rem;
     font-weight: 600;
 }
 
-main .content__main .container .box__creator .content__details .text p{
+main .content__main .container .box__creator .content .text p{
     color: rgba(255,255,255,0.7);
     font-size: .945rem;
     font-weight: 500;
-    padding: 9px 0;
+    padding: 9px 0px;
 }
 
+
 /*Details article name*/
+main .content__main .container .box__creator .content__details{
+    display: none;
+}
+
+main .content__main .container .box__creator .content__details.select{
+    display: flex;
+    flex-direction: column;
+}
+
 
 main .content__main .container .box__creator .content__details .article__name{
     display: flex;
@@ -167,7 +178,7 @@ main .content__main .container .box__creator .content__details .article__categor
 }
 
 main .content__main .container .box__creator .content__details .article__category .all__category button.button__select{
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.3);
 }
 
 
