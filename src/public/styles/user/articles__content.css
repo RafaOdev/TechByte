@@ -1,0 +1,160 @@
+main .content__main .articles{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main .content__main .articles .content{
+    display: flex;
+    flex-direction: column;
+}
+
+main .content__main .articles .content article{
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-top: 1px solid rgba(255,255,255,0.7);
+    border-bottom: 1px solid rgba(255,255,255,0.7);
+    padding: 20px 10px;
+}
+
+main .content__main .articles .content article .check input[type="checkbox"]{
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,0.1);
+    width: 20px;
+    height: 20px;
+    transition: all .2s linear;
+   
+}
+
+main .content__main .articles .content article .check input[type="checkbox"]:checked{
+    background-color: white;
+}
+
+main .content__main .articles .content article .check input[type="checkbox"]:checked::after{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+main .content__main .articles .content article .article__name{
+    padding: 0 20px;
+    position: absolute;
+    margin-left: 30px;
+}
+
+
+main .content__main .articles .content article .article__name a{
+    font-size: 1.1rem;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+
+main .content__main .articles .content article .datas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    width: 60%;
+    margin-left: 40%;
+}
+
+main .content__main .articles .content article .datas .views{
+    position: absolute;
+    margin-right: 8%;
+}
+
+main .content__main .articles .content article .datas .date{
+    position: absolute;
+    margin-left: 11%;
+}
+
+main .content__main .articles .content article .datas .comments{
+    position: absolute;
+    margin-left: 28%;
+}
+
+main .content__main .articles .content article .datas .visibility{
+    position: absolute;
+    margin-right: 28%;
+}
+
+
+main .content__main .articles .content article .datas span{
+    color: rgba(255,255,255,0.7);
+    font-family: "Poppins", sans-serif;
+    font-size: .875rem;
+}
+
+
+main .content__main .container .text__article{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    color: white;
+    font-size: .975rem;
+    padding: 20px 10px;
+}
+
+main .content__main .container .text__article .check input[type="checkbox"]{
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,0.1);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+main .content__main .container .text__article .check input[type="checkbox"]:checked{
+    background-color: white;
+}
+
+main .content__main .container .text__article .check input[type="checkbox"]:checked::after{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+
+main .content__main .container .text__article .select__articles{
+    font-size: 1.1rem;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    position: absolute;
+    font-weight: 600;
+    padding: 0 20px;
+    margin-left: 30px;
+}
+
+
+main .content__main .container .text__article .texts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    gap: 80px;
+    width: 60%;
+    margin-left: 40%;
+}
+
+

@@ -5,7 +5,7 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100vw;
-    height: 5rem; /* 80px convertido para 5rem */
+    height: 4.2rem; /* 80px convertido para 5rem */
     position: fixed;
     top: 0;
     left: 0;
@@ -20,11 +20,6 @@ header .header__namepage {
     width: 7.25rem;
 }
 
-header .header__namepage:hover {
-    bottom: 0.188rem; /* 3px convertido para 0.188rem */
-    font-size: 1.800rem; /* 35px convertido para 2.188rem */
-    height: 100%;
-}
 
 header .header__namepage a {
     position: relative;

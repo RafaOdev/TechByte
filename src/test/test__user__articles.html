@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/styles/home.css">
+    <link rel="stylesheet" href="../../public/styles/user/nav__left.css">
+    <link rel="stylesheet" href="../../public/styles/user/header__user.css">
+    <link rel="stylesheet" href="../../public/styles/user/main__user.css">
+    <link rel="stylesheet" href="../../public/styles/user/profile__content.css">
+    <link rel="stylesheet" href="../../public/styles/user/articles__content.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>Artigos - TechByte</title>
+</head>
+<body>
+
+    <header>
+        <div class="header__namepage header__page__logo">
+            <a href="">
+                TechByte
+            </a>
+        </div>
+
+        <div class="search">
+            <button class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <input type="text" placeholder="Pesquise no perfil">
+        </div>
+    </header>
+
+    <main>
+        <section class="sidebar">
+            <nav class="left__nav">
+                <div class="user">
+                    <div class="thumbnail__user">
+                        <img id="thumb" src="/images/132023935.jpg" alt="">
+                    </div>
+
+                    <div class="user__">
+                        <div class="user__name">
+                            Rafael
+                        </div>
+
+                        <div class="subjects">
+                            <span class="numbers__materials">1000</span>
+                            Matérias publicadas
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav__list">
+                    <ul>
+                        <li value="Perfil">
+                            <i class="fa-solid fa-user"></i>
+                            Perfil
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-newspaper"></i>
+                            Artigos
+                        </li>
+
+                        <li value="Create">
+                            <i class="fa-solid fa-pen"></i>
+                            Criação de artigos
+                        </li>
+
+
+
+                        <div class="config">
+                            <li value="config">
+                                <i class="fa-solid fa-gear"></i>
+                                Configurações
+                            </li>
+                            <li value="help">
+                                <i class="fa-solid fa-circle-info"></i>
+                               Ajuda
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+
+        <section class="content__main">
+            <div class="container">
+                <div class="customization">
+                    <h1>Artigos</h1>
+                    <p>todos os artigos criados irão aparecer aqui.</p>
+                </div>
+
+                <div class="text__article">
+                    <div class="check">
+                        <input type="checkbox" name="" id="check__articles">
+                    </div>
+
+                    <div class="select__articles">
+                        Artigos
+                    </div>
+
+                    <div class="texts">
+                        <div class="visibility">
+                            Visibilidade
+                        </div>
+
+                        <div class="views">
+                            Visualizações
+                        </div>
+
+                        <div class="date">
+                            Data
+                        </div>
+
+                        <div class="comments">
+                            Comentários
+                        </div>
+                    </div>
+                </div>
+
+                <div class="articles">
+                    <div class="content">
+                        <article>
+                            <div class="check">
+                                <input type="checkbox">
+                            </div>
+
+                            <div class="article__name">
+                                <a id="article__name" href="">
+                                    nome do artigo
+                                </a>
+                            </div>
+
+                            <div class="datas">
+                                <div class="visibility">
+                                    <span value="">publico</span>
+                                </div>
+
+                                <div class="views">
+                                    <span>2.000</span>
+                                </div>
+
+                                <div class="date">
+                                    <span>28/05/2024</span>
+                                </div>
+
+                                <div class="comments">
+                                    <span>200</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
