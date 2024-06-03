@@ -1,6 +1,6 @@
 main .content__main{
-    background-color: rgba(0, 0, 0, 0.85);
-    position: absolute;
+    background-color: var(--background);
+    position: fixed;
     border-left: 1px solid rgba(255,255,255,0.1);
     margin-left: 16em;
     width: 86.6%;
@@ -42,4 +42,9 @@ textarea::placeholder{
 input::placeholder{
     font-size: 1.1rem;
     font-family: "Poppins", sans-serif;
+}
+
+main .content__main .container .profile{
+    height: 100%;
+    background-color: var(--background);
 }

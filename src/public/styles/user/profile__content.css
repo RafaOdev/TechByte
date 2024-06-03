@@ -1,5 +1,6 @@
 main .content__main .container .personal__datas{
     width: 50%;
+    background-color: var(--background);
     display: flex;
     flex-direction: column;
     justify-content: center;

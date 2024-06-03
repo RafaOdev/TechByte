@@ -98,6 +98,46 @@ function select__privacy(){
 }
 
 
+/*zone selection button*/
+function select__section(){
+    const selection__buttons = document.querySelectorAll('.top__box .button__details button');
+    const elements = document.querySelectorAll('.box__creator .content .element');
+    let select__button = null;
 
-select__privacy();
-select__category();
+    selection__buttons.forEach((button) => {
+        button.addEventListener('click', () =>{
+            const button__value = button.value;
+            const details = button__value === 'details';
+            const content = button__value === 'content';
+            const visibility = button__value === 'visibility';
+            
+            elements.forEach((section) => {
+                section.classList.remove('select');
+            })
+          
+            if(select__button !== null){
+                select__button.classList.remove('activate');
+            }
+
+            if(details){
+                document.querySelector('.content__details').classList.add('select');
+            } else if(content){
+                document.querySelector('.content__create').classList.add('select');
+            }else if(visibility){
+                document.querySelector('.content__visibility').classList.add('select');
+            }
+            
+            button.classList.add('activate');
+            select__button = button;
+        });
+    });
+
+    if(selection__buttons.length > 0){
+        selection__buttons[0].click();
+    }
+}
+
+
+document.addEventListener('DOMContentLoaded', select__section);
+document.addEventListener('DOMContentLoaded', select__privacy);
+document.addEventListener('DOMContentLoaded', select__category);

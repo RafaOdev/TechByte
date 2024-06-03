@@ -1,50 +1,51 @@
-main .content__main .container .box__creator .top__box{
+main .content__main .container .creation .box__creator .top__box{
     display: flex;
     align-items: center;
     border-bottom: 1px solid rgba(255,255,255,0.1);
     padding: 0 30px;
 }
 
-main .content__main .container .box__creator .top__box .button__details{
+main .content__main .container .creation .box__creator .top__box .button__details{
     display: flex;
     align-items: center;
     gap: 50px;
 }
 
 
-main .content__main .container .box__creator .top__box .button__details button{
+main .content__main .container .creation .box__creator .top__box .button__details button{
     border: none;
     height: 50px;
     cursor: pointer;
     justify-content: center;
     background-color: transparent;
+    transition: all .1s linear;
     color: rgba(255,255,255,0.7);
     font-size: 1.02rem;
 }
 
-main .content__main .container .box__creator .top__box .button__details button.activate{
+main .content__main .container .creation .box__creator .top__box .button__details button.activate{
     border-bottom: 3px solid rgba(255,0,0,0.7);
     color: rgb(255, 55, 55);
 }
 
-main .content__main .container .box__creator .content{
+main .content__main .container .creation .box__creator .content{
     display: flex;
     flex-direction: column;
 }
 
-main .content__main .container .box__creator .content .text{
+main .content__main .container .creation .box__creator .content .text{
     display: flex;
     flex-direction: column;
     padding: 20px 0;
 }
 
-main .content__main .container .box__creator .content .text h2{
+main .content__main .container .creation .box__creator .content .text h2{
     color: white;
     font-size: 1.1rem;
     font-weight: 600;
 }
 
-main .content__main .container .box__creator .content .text p{
+main .content__main .container .creation .box__creator .content .text p{
     color: rgba(255,255,255,0.7);
     font-size: .945rem;
     font-weight: 500;
@@ -53,23 +54,23 @@ main .content__main .container .box__creator .content .text p{
 
 
 /*Details article name*/
-main .content__main .container .box__creator .content__details{
+main .content__main .container .creation .box__creator .content__details{
     display: none;
 }
 
-main .content__main .container .box__creator .content__details.select{
+main .content__main .container .creation .box__creator .content__details.select{
     display: flex;
     flex-direction: column;
 }
 
 
-main .content__main .container .box__creator .content__details .article__name{
+main .content__main .container .creation .box__creator .content__details .article__name{
     display: flex;
     flex-direction: column;
     padding: 0 35px;
 }
 
-main .content__main .container .box__creator .content__details .article__name .textarea__name{
+main .content__main .container .creation .box__creator .content__details .article__name .textarea__name{
     width: 600px;
     padding: 10px 10px;
     display: flex;
@@ -79,7 +80,7 @@ main .content__main .container .box__creator .content__details .article__name .t
     border: 1px solid rgba(255,255,255,0.2);
 }
 
-main .content__main .container .box__creator .content__details .article__name .textarea__name textarea{
+main .content__main .container .creation .box__creator .content__details .article__name .textarea__name textarea{
     width: 100%;
     background-color: transparent;
     font-size: 1.1rem;
@@ -90,13 +91,13 @@ main .content__main .container .box__creator .content__details .article__name .t
 
 /*Details article desc*/
 
-main .content__main .container .box__creator .content__details .article__desc{
+main .content__main .container .creation .box__creator .content__details .article__desc{
     display: flex;
     flex-direction: column;
     padding: 0 35px;
 }
 
-main .content__main .container .box__creator .content__details .article__desc .textarea__desc{
+main .content__main .container .creation .box__creator .content__details .article__desc .textarea__desc{
     width: 600px;
     height: 80px;
     padding: 10px 10px;
@@ -107,7 +108,7 @@ main .content__main .container .box__creator .content__details .article__desc .t
     border: 1px solid rgba(255,255,255,0.2);
 }
 
-main .content__main .container .box__creator .content__details .article__desc .textarea__desc textarea{
+main .content__main .container .creation .box__creator .content__details .article__desc .textarea__desc textarea{
     width: 100%;
     height: 100%;
     background-color: transparent;
@@ -119,7 +120,7 @@ main .content__main .container .box__creator .content__details .article__desc .t
 
 /*Details article category*/
 
-main .content__main .container .box__creator .content__details .article__category{
+main .content__main .container .creation .box__creator .content__details .article__category{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -128,7 +129,7 @@ main .content__main .container .box__creator .content__details .article__categor
 }
 
 
-main .content__main .container .box__creator .content__details .article__category .category{
+main .content__main .container .creation .box__creator .content__details .article__category .category{
     border: 1px solid rgba(255,255,255,0.2);
     width: 200px;
     height: 50px;
@@ -138,36 +139,36 @@ main .content__main .container .box__creator .content__details .article__categor
     cursor: pointer;
 }
 
-main .content__main .container .box__creator .content__details .article__category .category.select__category{
+main .content__main .container .creation .box__creator .content__details .article__category .category.select__category{
     border-bottom: none;
 }
 
-main .content__main .container .box__creator .content__details .article__category .category span{
+main .content__main .container .creation .box__creator .content__details .article__category .category span{
     color: rgba(255,255,255,0.5);
     font-size: .875rem;
     padding: 0 10px;
 }
 
-main .content__main .container .box__creator .content__details .article__category .category span.select__span{
+main .content__main .container .creation .box__creator .content__details .article__category .category span.select__span{
     color: white;
     font-size: 1rem;
 }
 
-main .content__main .container .box__creator .content__details .article__category .category .icon{
+main .content__main .container .creation .box__creator .content__details .article__category .category .icon{
     margin-left: 10.6%;
     position: absolute;
     color: white;
 }
 
 
-main .content__main .container .box__creator .content__details .article__category .all__category{
+main .content__main .container .creation .box__creator .content__details .article__category .all__category{
     border: 1px solid rgba(255,255,255,0.2);
     width: 200px;
     display: none;
     flex-direction: column;
 }
 
-main .content__main .container .box__creator .content__details .article__category .all__category button{
+main .content__main .container .creation .box__creator .content__details .article__category .all__category button{
     color: white;
     background-color: transparent;
     display: flex;
@@ -177,7 +178,7 @@ main .content__main .container .box__creator .content__details .article__categor
     padding: 10px 10px;
 }
 
-main .content__main .container .box__creator .content__details .article__category .all__category button.button__select{
+main .content__main .container .creation .box__creator .content__details .article__category .all__category button.button__select{
     background-color: rgba(0,0,0,0.3);
 }
 

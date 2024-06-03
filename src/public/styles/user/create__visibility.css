@@ -1,18 +1,27 @@
-main .content__main .container .box__creator .content .content__visibility .box__visibility .text__visibility h2{
+main .content__main .container .creation .box__creator .content .content__visibility{
+    display: none;
+}
+
+main .content__main .container .creation .box__creator .content .content__visibility.select{
+    display: flex;
+    flex-direction: column;
+}
+
+main .content__main .container .creation .box__creator .content .content__visibility .box__visibility .text__visibility h2{
     color: white;
     font-size: 1.1rem;
     font-weight: 600;
     padding: 0 30px;
 }
 
-main .content__main .container .box__creator .content .content__visibility .box__visibility .text__visibility p{
+main .content__main .container .creation .box__creator .content .content__visibility .box__visibility .text__visibility p{
     color: rgba(255,255,255,0.7);
     font-size: .945rem;
     font-weight: 500;
     padding: 9px 30px;
 }
 
-main .content__main .container .box__creator .content .content__visibility .box__visibility .visibility{
+main .content__main .container .creation .box__creator .content .content__visibility .box__visibility .visibility{
     border: 1px solid rgba(255,255,255,0.2);
     width: 200px;
     height: 50px;
@@ -24,23 +33,23 @@ main .content__main .container .box__creator .content .content__visibility .box_
     cursor: pointer;
 }
 
-main .content__main .container .box__creator .content .content__visibility .box__visibility .visibility span{
+main .content__main .container .creation .box__creator .content .content__visibility .box__visibility .visibility span{
     color: rgba(255,255,255,0.5);
     font-size: .875rem;
     padding: 0 10px;
 }
 
-main .content__main .container .box__creator .content .content__visibility .box__visibility .visibility span.span__visibility{
+main .content__main .container .creation .box__creator .content .content__visibility .box__visibility .visibility span.span__visibility{
     color: white;
     font-size: 1rem;
 }
 
-main .content__main .container .box__creator .content .content__visibility .box__visibility .visibility .icon{
+main .content__main .container .creation .box__creator .content .content__visibility .box__visibility .visibility .icon{
     margin-left: 10.6%;
     position: absolute;
 }
 
-main .content__main .container .box__creator .content .content__visibility .box__visibility .all__visibility{
+main .content__main .container .creation .box__creator .content .content__visibility .box__visibility .all__visibility{
     border: 1px solid rgba(255,255,255,0.2);
     width: 200px;
     margin-left: 30px;
@@ -48,7 +57,7 @@ main .content__main .container .box__creator .content .content__visibility .box_
     flex-direction: column;
 }
 
-main .content__main .container .box__creator .content .content__visibility .box__visibility .all__visibility button{
+main .content__main .container .creation .box__creator .content .content__visibility .box__visibility .all__visibility button{
     color: white;
     background-color: transparent;
     display: flex;
@@ -58,6 +67,57 @@ main .content__main .container .box__creator .content .content__visibility .box_
     padding: 14px 10px;
 }
 
-main .content__main .container .box__creator .content .content__visibility .box__visibility .all__visibility button.button__visibility__select{
+main .content__main .container .creation .box__creator .content .content__visibility .box__visibility .all__visibility button.button__visibility__select{
     background-color: rgba(0,0,0,0.3);
+}
+
+/*to schedule*/
+main .content__main .container .creation .box__creator .content .content__visibility .box__visibility .toSchedule{
+    display: flex;
+    flex-direction: column;
+}
+
+
+main .content__main .container .creation .box__creator .content .content__visibility .box__visibility .toSchedule .text__toSchedule{
+    margin-left: 30px;
+}
+
+main .content__main .container .creation .box__creator .content .content__visibility .box__visibility .toSchedule .date__toSchedule{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    gap: 30px;
+}
+
+main .content__main .container .creation .box__creator .content .content__visibility .box__visibility .toSchedule .date__toSchedule .input__date{
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 10px;
+}
+
+main .content__main .container .creation .box__creator .content .content__visibility .box__visibility .toSchedule .date__toSchedule .input__date input{
+    width: 160px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    text-align: center;
+}
+
+main .content__main .container .creation .box__creator .content .content__visibility .box__visibility .toSchedule .date__toSchedule .input__hour{
+    border: 1px solid rgba(255,255,255,0.2);
+    display: flex;
+    padding: 10px;
+    width: 110px;
+}
+
+main .content__main .container .creation .box__creator .content .content__visibility .box__visibility .toSchedule .date__toSchedule .input__hour input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    text-align: center;
 }
