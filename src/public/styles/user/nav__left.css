@@ -3,10 +3,10 @@ main .sidebar{
     align-items: center;
     flex-direction: column;
     background-color: var(--background);
-    position: fixed;
+    position: relative;
     width: 16em;
-    margin-top: 4.2em;
     height: 92.6vh;
+    margin-top: 4.2em;
 }
 
 main .sidebar .left__nav{

@@ -2,12 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../../public/styles/home.css">
-    <link rel="stylesheet" href="../../public/styles/user/header__user.css">
+    <meta name="description" content="article creation">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../../public/styles/home.css">
+    <link rel="stylesheet" href="../../public/styles/user/nav__left.css">
+    <link rel="stylesheet" href="../../public/styles/user/header__user.css">
+    <link rel="stylesheet" href="../../public/styles/user/main__user.css">
+    <link rel="stylesheet" href="../../public/styles/user/profile__content.css">
+    <link rel="stylesheet" href="../../public/styles/user/create__details__articles.css">
+    <link rel="stylesheet" href="../../public/styles/user/create__content.css">
+    <link rel="stylesheet" href="../../public/styles/user/create__visibility.css">
+    <link rel="stylesheet" href="../../public/styles/user/articles__content.css">
+    <link rel="stylesheet" href="../../public/styles/medias/user__profile__media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>Criação - TechByte</title>
 </head>
 <body>
+
     <header>
         <div class="header__namepage header__page__logo">
             <a href="">
@@ -29,6 +46,265 @@
         </div>
     </header>
 
-    <main></main>
+    <main>
+        <section class="sidebar">
+            <nav class="left__nav">
+                <div class="user">
+                    <div class="thumbnail__user">
+                        <img id="thumb" src="/images/132023935.jpg" alt="">
+                    </div>
+
+                    <div class="user__">
+                        <div class="user__name">
+                            Rafael
+                        </div>
+
+                        <div class="subjects">
+                            <span class="numbers__materials">1000</span>
+                            Matérias publicadas
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav__list">
+                    <ul>
+                        <li value="Perfil">
+                            <i class="fa-solid fa-user"></i>
+                            Perfil
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-newspaper"></i>
+                            Artigos
+                        </li>
+
+                        <li value="Create">
+                            <i class="fa-solid fa-pen"></i>
+                            Criação de artigos
+                        </li>
+
+                        <div class="config">
+                            <li value="config">
+                                <i class="fa-solid fa-gear"></i>
+                                Configurações
+                            </li>
+                            <li value="help">
+                                <i class="fa-solid fa-circle-info"></i>
+                               Ajuda
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+
+        <section class="content__main">
+            <div class="container">
+                <div class="profile">
+                    <div class="customization">
+                        <h1>Personalização</h1>
+                        <p>Os dados inseridos aqui serão visíveis nos artigos publicados.</p>
+                    </div>
+    
+                    <div class="personal__datas">
+                        <div class="name__user">
+                            <div class="text">
+                                <h2>Nome</h2>
+                                <p>O nome adicionado será visível na descrição do criador do artigo.</p>
+                            </div>
+                            <div class="input__nameUser">
+                                <input placeholder="Digite um nome" type="text" id="name">
+                            </div>
+                        </div>
+    
+                        <div class="email__user">
+                            <div class="text">
+                                <h2>Email de contato</h2>
+                                <p>O email adicionado será visível para contato.</p>
+                            </div>
+                            <div class="input__emailUser">
+                                <input placeholder="Digite um email para contato" type="text" class="email">
+                            </div>
+                        </div>
+    
+                        <div class="desc__user">
+                            <div class="text">
+                                <h2>Descrição</h2>
+                                <p>A descrição será visível no seu perfil.</p>
+                                <div class="text__user__desc">
+                                    <textarea placeholder="Digite uma descrição sobre você" class="text__desc" maxlength="300"></textarea>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="link">
+                            <div class="text">
+                                <h2>Link</h2>
+                                <p>Adicione o link para uma rede social</p>
+                            </div>
+                            <button class="btn__link">
+                                <i class="fa-solid fa-plus"></i>
+                                Adicionar link
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="articles" style="display: none;">
+                    <div class="customization">
+                        <h1>Artigos</h1>
+                        <p>Todos os artigos criados irão aparecer aqui.</p>
+                    </div>
+    
+                    <div class="text__article">
+                        <div class="check">
+                            <input type="checkbox" name="" id="check__articles">
+                        </div>
+    
+                        <div class="select__articles">
+                            Artigos
+                        </div>
+    
+                        <div class="texts">
+                            <div class="visibility">
+                                Visibilidade
+                            </div>
+    
+                            <div class="views">
+                                Visualizações
+                            </div>
+    
+                            <div class="date">
+                                Data
+                            </div>
+    
+                            <div class="comments">
+                                Comentários
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="articles">
+                        <div class="content">
+                            <!--Aqui será adicionado um article com os dados do artigo do usuário-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="creation" style="display: none;">
+                    <div class="customization">
+                        <h1>Criação de artigos</h1>
+                        <p>Essa é a seção de criação de artigos, todos os artigos estarão privados até que você os deixe público</p>
+                    </div>
+    
+                    <div class="box__creator">
+                        <div class="top__box">
+                            <div class="button__details">
+                                <div class="btn__details">
+                                    <button value="details" class="details activate">Detalhes</button>
+                                </div>
+    
+                                <div class="button__content">
+                                    <button value="content" class="content">Conteúdo</button>
+                                </div>
+    
+                                <div class="button__visibility">
+                                    <button value="visibility" class="visibility">Visibilidade</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <div class="content__details element select">
+                                <div class="article__name">
+                                    <div class="text">
+                                        <h2>Título</h2>
+                                    </div>
+                                    <div class="textarea__name">
+                                        <textarea placeholder="Digite um título para o seu artigo" maxlength="60"></textarea>
+                                    </div>
+                                </div>
+                            
+                                <div class="article__desc">
+                                    <div class="text">
+                                        <h2>Descrição</h2>
+                                    </div>
+                            
+                                    <div class="textarea__desc">
+                                        <textarea placeholder="Digite uma descrição de no máximo 165 caracteres" maxlength="165"></textarea>
+                                    </div>
+                                </div>
+                            
+                                <div class="article__category">
+                                    <div class="text">
+                                        <h2>Tag</h2>
+                                        <p>Adicione em qual categoria o seu artigo se encaixa</p>
+                                    </div>
+                                    <div class="category">
+                                        <span id="category">Selecione uma categoria</span>
+                                        <div class="icon">
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="all__category">
+                                        <button value="Games" class="games btn__category">Games</button>
+                                        <button value="Tecnologia" class="tecnology btn__category">Tecnologia</button>
+                                        <button value="Reviews" class="reviews btn__category">Reviews</button>
+                                    </div>
+                                </div>   
+                            </div>
+                            
+                            <div class="content__create element">
+                                <div class="text text__create">
+                                    <h2>Conteúdo</h2>
+                                    <p>Digite o conteúdo do artigo, o conteúdo inserido aqui poderá conter imagens, vídeos e textos. Para mais informações, leia o artigo na seção de ajuda sobre criação de artigos</p>
+                                </div>
+                                <div class="textarea__content">
+                                    <textarea placeholder="Digite o conteúdo aqui"></textarea>
+                                </div>
+                            </div>
+                            
+                            <div class="content__visibility element">
+                                <div class="box__visibility">
+                                    <div class="text text__visibility">
+                                        <h2>Guardar ou postar</h2>
+                                        <p>Selecione se o seu artigo será privado ou público</p>
+                                    </div>
+                                    <div class="visibility">
+                                        <span id="visibility">Selecione a visibilidade</span>
+                                        <div class="icon">
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="all__visibility">
+                                        <button value="Privado" class="private">Privado</button>
+                                        <button value="Publico" class="public">Público</button>
+                                    </div>
+                                    <div class="toSchedule">
+                                        <div class="text text__toSchedule">
+                                            <h2>Agendar</h2>
+                                            <p>Selecione uma data para a postagem do artigo. Caso escolha essa opção, o seu artigo ficará como privado até a data agendada</p>
+                                        </div>
+                                        <div class="date__toSchedule">
+                                            <div class="input__date">
+                                                <input type="date">
+                                            </div>
+                                            <div class="input__hour">
+                                                <input type="time" placeholder="00:00">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../../public/scripts/user/select.js"></script>
+    <script src="../../public/scripts/user/user__mobile.js"></script>
 </body>
 </html>

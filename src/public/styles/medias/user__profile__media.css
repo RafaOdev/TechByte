@@ -1,8 +1,20 @@
-@media (min-width: 50em) and (max-width: 100em){
+@media (min-width: 40.625em) and (max-width: 100em){
+    header .header__namepage{
+        width: 18%;
+    }
 
+    header .search{
+        margin-left: 10%;
+    }
+
+    /*content*/
+
+    main .content__main .container .profile .personal__datas{
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 31.25em){
+@media screen and (max-width: 40.5625em){
     /*header*/
     header .header__namepage{
         width: 22%;
@@ -110,10 +122,11 @@
     /*sidebar*/
     main .sidebar{
         display: none;
+        
     }
 
     main .sidebar.select__sidebar{
-        z-index: 1000;
+        z-index: 100;
         display: flex;
         background-color: var(--background);
         position: fixed;
@@ -169,25 +182,8 @@
     }
 
     main .content__main .container .personal__datas{
-        padding: 10px 0;
+        height: 90%;
     }
 }
 
 
-@media only screen and (min-height: 56.875em){
-    main .content__main{
-        margin-left: 0;
-        width: 100%;
-        position: fixed;
-    }
-
-    main .content__main .container .customization{
-        padding: 40px 30px;
-    }
-
-    main .content__main .container .personal__datas{
-        padding: none;
-        height: 73%;
-    }
-    
-}

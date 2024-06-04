@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="article creation">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../public/styles/home.css">
+    <link rel="stylesheet" href="../../public/styles/user/main__user.css">
     <link rel="stylesheet" href="../../public/styles/user/nav__left.css">
     <link rel="stylesheet" href="../../public/styles/user/header__user.css">
-    <link rel="stylesheet" href="../../public/styles/user/main__user.css">
     <link rel="stylesheet" href="../../public/styles/user/profile__content.css">
-    <link rel="stylesheet" href="../../public/styles/user/create__details__articles.css">
+    <link rel="stylesheet" href="../../public/styles/user/create__details.css">
     <link rel="stylesheet" href="../../public/styles/user/create__content.css">
     <link rel="stylesheet" href="../../public/styles/user/create__visibility.css">
     <link rel="stylesheet" href="../../public/styles/user/articles__content.css">
@@ -82,8 +82,6 @@
                             Criação de artigos
                         </li>
 
-
-
                         <div class="config">
                             <li value="config">
                                 <i class="fa-solid fa-gear"></i>
@@ -120,33 +118,29 @@
     
                         <div class="email__user">
                             <div class="text">
-                                <h2>Email de contanto</h2>
-                                <p>O meu email adicionado será visível para contanto.</p>
+                                <h2>Email de contato</h2>
+                                <p>O email adicionado será visível para contato.</p>
                             </div>
                             <div class="input__emailUser">
-                                <input placeholder="Digite um email para contanto" type="text" class="email">
+                                <input placeholder="Digite um email para contato" type="text" class="email">
                             </div>
                         </div>
-    
     
                         <div class="desc__user">
                             <div class="text">
                                 <h2>Descrição</h2>
                                 <p>A descrição será visível no seu perfil.</p>
-    
                                 <div class="text__user__desc">
                                     <textarea placeholder="Digite uma descrição sobre você" class="text__desc" maxlength="300"></textarea>
                                 </div>
                             </div>
                         </div>
     
-    
                         <div class="link">
                             <div class="text">
                                 <h2>Link</h2>
                                 <p>Adicione o link para uma rede social</p>
                             </div>
-    
                             <button class="btn__link">
                                 <i class="fa-solid fa-plus"></i>
                                 Adicionar link
@@ -158,7 +152,7 @@
                 <div class="articles" style="display: none;">
                     <div class="customization">
                         <h1>Artigos</h1>
-                        <p>todos os artigos criados irão aparecer aqui.</p>
+                        <p>Todos os artigos criados irão aparecer aqui.</p>
                     </div>
     
                     <div class="text__article">
@@ -214,7 +208,7 @@
                                 </div>
     
                                 <div class="button__visibility">
-                                    <button value="visibility" class="visibility">Visiblidade</button>
+                                    <button value="visibility" class="visibility">Visibilidade</button>
                                 </div>
                             </div>
                         </div>
@@ -241,7 +235,7 @@
                                 </div>
                             
                                 <div class="article__category">
-                                        <div class="text">
+                                    <div class="text">
                                         <h2>Tag</h2>
                                         <p>Adicione em qual categoria o seu artigo se encaixa</p>
                                     </div>
@@ -253,28 +247,18 @@
                                     </div>
                             
                                     <div class="all__category">
-                                        <button value="Games" class="games btn__category">
-                                            Games
-                                        </button>
-                            
-                                        <button value="Tecnologia" class="tecnology btn__category">
-                                            Tecnologia
-                                        </button>
-                            
-                                        <button value="Reviews" class="reviews btn__category">
-                                            Reviews
-                                        </button>
+                                        <button value="Games" class="games btn__category">Games</button>
+                                        <button value="Tecnologia" class="tecnology btn__category">Tecnologia</button>
+                                        <button value="Reviews" class="reviews btn__category">Reviews</button>
                                     </div>
                                 </div>   
                             </div>
                             
-                            
                             <div class="content__create element">
                                 <div class="text text__create">
                                     <h2>Conteúdo</h2>
-                                        <p>Digite o conteúdo do artigo, o conteúdo inserido aqui poderá conter imagens, videos e textos. Para mais informações, leia o artigo na seção de ajuda sobre criação de artigos</p>
+                                    <p>Digite o conteúdo do artigo, o conteúdo inserido aqui poderá conter imagens, vídeos e textos. Para mais informações, leia o artigo na seção de ajuda sobre criação de artigos</p>
                                 </div>
-                            
                                 <div class="textarea__content">
                                     <textarea placeholder="Digite o conteúdo aqui"></textarea>
                                 </div>
@@ -286,34 +270,27 @@
                                         <h2>Guardar ou postar</h2>
                                         <p>Selecione se o seu artigo será privado ou público</p>
                                     </div>
-                            
                                     <div class="visibility">
-                                        <span id="visibility">Selecione a visiblidade</span>
-                            
+                                        <span id="visibility">Selecione a visibilidade</span>
                                         <div class="icon">
                                             <i class="fa-solid fa-caret-down"></i>
                                         </div>
                                     </div>
-                            
                                     <div class="all__visibility">
                                         <button value="Privado" class="private">Privado</button>
-                            
-                                        <button value="Publico" class="Public">Público</button>
+                                        <button value="Publico" class="public">Público</button>
                                     </div>
-                            
                                     <div class="toSchedule">
                                         <div class="text text__toSchedule">
                                             <h2>Agendar</h2>
                                             <p>Selecione uma data para a postagem do artigo. Caso escolha essa opção, o seu artigo ficará como privado até a data agendada</p>
                                         </div>
-                            
                                         <div class="date__toSchedule">
                                             <div class="input__date">
                                                 <input type="date">
                                             </div>
-                            
                                             <div class="input__hour">
-                                                    <input type="" placeholder="00:00">
+                                                <input type="time" placeholder="00:00">
                                             </div>
                                         </div>
                                     </div>
@@ -326,7 +303,7 @@
         </section>
     </main>
 
-    <script src="../../public/scripts/user/create__article.js"></script>
+    <script src="../../public/scripts/user/select.js"></script>
     <script src="../../public/scripts/user/user__mobile.js"></script>
 </body>
 </html>
