@@ -1,3 +1,12 @@
+main .content__main .container .creation{
+    display: none;
+}
+
+main .content__main .container .creation.select{
+    display: flex;
+    flex-direction: column;
+}
+
 main .content__main .container .creation .box__creator .content{
     display: flex;
     flex-direction: column;

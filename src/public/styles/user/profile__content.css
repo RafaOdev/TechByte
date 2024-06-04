@@ -1,5 +1,14 @@
+main .content__main .container .profile{
+    display: none;
+}
+
+main .content__main .container .profile.select{
+    display: flex;
+    flex-direction: column;
+}
+
 main .content__main .container .personal__datas{
-    width: 50%;
+    width: 100%;
     background-color: var(--background);
     display: flex;
     flex-direction: column;
@@ -30,7 +39,7 @@ main .content__main .container .personal__datas .name__user .input__nameUser{
     padding: 0 10px;
     height: 40px;
     margin-left: 30px;
-    width: 80%;
+    width: 25%;
     background-color: transparent;
     border: 1px solid rgba(255,255,255,0.1);
 }
@@ -49,7 +58,7 @@ main .content__main .container .personal__datas .email__user .input__emailUser{
     padding: 0 10px;
     height: 40px;
     margin-left: 30px;
-    width: 80%;
+    width: 25%;
     border: 1px solid rgba(255,255,255,0.1);
 }
 
@@ -66,7 +75,7 @@ main .content__main .container .personal__datas .email__user .input__emailUser i
 main .content__main .container .personal__datas .desc__user .text__user__desc{
     padding: 10px 10px;
     max-height: 100px;
-    width: 86%;
+    width: 26%;
     margin-top: 25px;
     display: flex;
     align-items: center;

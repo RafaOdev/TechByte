@@ -2,7 +2,7 @@ main .content__main{
     background-color: var(--background);
     position: relative;
     border-left: 1px solid rgba(255,255,255,0.1);
-    width: 86.6%;
+    width: 100%;
     margin-top: 4.2em;
 }
 

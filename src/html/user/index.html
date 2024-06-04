@@ -66,40 +66,42 @@
                 </div>
 
                 <div class="nav__list">
-                    <ul>
-                        <li value="Perfil">
+                    <ol>
+                        <li class="list__profile activate" value="1">
                             <i class="fa-solid fa-user"></i>
                             Perfil
                         </li>
 
-                        <li>
+                        <li class="list__articles" value="2">
                             <i class="fa-solid fa-newspaper"></i>
                             Artigos
                         </li>
 
-                        <li value="Create">
+                        <li class="list__create" value="3">
                             <i class="fa-solid fa-pen"></i>
                             Criação de artigos
                         </li>
 
                         <div class="config">
-                            <li value="config">
+                            <li class="list__config" value="4">
                                 <i class="fa-solid fa-gear"></i>
                                 Configurações
                             </li>
-                            <li value="help">
+                            <li class="list__help" value="5">
                                 <i class="fa-solid fa-circle-info"></i>
                                Ajuda
                             </li>
                         </div>
-                    </ul>
+                    </ol>
                 </div>
             </nav>
         </section>
 
+
         <section class="content__main">
+            <div class="overlay"></div>
             <div class="container">
-                <div class="profile">
+                <div class="profile element__section">
                     <div class="customization">
                         <h1>Personalização</h1>
                         <p>Os dados inseridos aqui serão visíveis nos artigos publicados.</p>
@@ -149,7 +151,7 @@
                     </div>
                 </div>
 
-                <div class="articles" style="display: none;">
+                <div class="articles element__section">
                     <div class="customization">
                         <h1>Artigos</h1>
                         <p>Todos os artigos criados irão aparecer aqui.</p>
@@ -190,7 +192,7 @@
                     </div>
                 </div>
 
-                <div class="creation" style="display: none;">
+                <div class="creation element__section">
                     <div class="customization">
                         <h1>Criação de artigos</h1>
                         <p>Essa é a seção de criação de artigos, todos os artigos estarão privados até que você os deixe público</p>
@@ -303,7 +305,8 @@
         </section>
     </main>
 
-    <script src="../../public/scripts/user/select.js"></script>
+    <script src="../../public/scripts/user/select__section.js"></script>
     <script src="../../public/scripts/user/user__mobile.js"></script>
+    <script src="../../public/scripts/user/select.js"></script>
 </body>
 </html>
