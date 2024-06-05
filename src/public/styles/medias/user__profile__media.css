@@ -130,7 +130,6 @@
 
     /*sidebar*/
     main .sidebar{
-        opacity: 0;
         z-index: 1000;
         left: -256px;
         position: fixed;
@@ -173,6 +172,7 @@
     main .content__main{
         margin-left: 0;
         width: 100%;
+        background-color: var(--background);
         position: absolute;
     }
 
@@ -182,20 +182,27 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade conforme necessário */
-        z-index: 500; /* Certifique-se de que o overlay está acima do conteúdo principal */
-        opacity: 0; /* Inicialmente escondido */
-        pointer-events: none; /* Permite cliques passarem pelo overlay quando escondido */
-        transition: opacity 0.5s ease-in-out; /* Transição suave */
+        display: none;
+        height: 100vh;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 500; 
+        pointer-events: none;
+        transition: all 0.5s ease-in-out;
     }
 
     main .content__main.block__nav{
-        position: fixed;
+        position: fixed;   
     }
 
     main .content__main.block__nav .overlay{
+       display: flex;
        opacity: 1;
        pointer-events: auto;
+    }
+
+    main .content__main .container .creation{
+        padding: 20px 0;
     }
 
     /*section profile*/
@@ -223,10 +230,73 @@
         font-size: .875rem;
     }
 
-    /*section articles*/
+    /*article section*/
 
     main .content__main .container .text__article{
         display: none;
+    }
+
+    /*article creation section*/
+    main .content__main .container .creation .box__creator .top__box{
+        padding: 0px 20px;
+    }
+
+    main .content__main .container .creation .box__creator .content .text h2{
+        font-size: 1rem;
+    }
+
+    main .content__main .container .creation .box__creator .content .text p{
+        font-size: .775rem;
+    }
+
+    /*article creation section: details*/
+    main .content__main .container .creation .box__creator .content__details{
+        padding: 20px 0;
+    }
+
+    main .content__main .container .creation .box__creator .content__details .article__name{
+        padding: 0 20px;
+    }
+
+    main .content__main .container .creation .box__creator .content__details .article__name .textarea__name{
+        width: 90%;
+    }
+
+    main .content__main .container .creation .box__creator .content__details .article__name .textarea__name textarea{
+        font-size: .875rem;
+    }
+
+    main .content__main .container .creation .box__creator .content__details .article__desc{
+        padding: 0 20px;
+    }
+
+    main .content__main .container .creation .box__creator .content__details .article__desc .textarea__desc{
+        width: 90%;
+    }
+
+    main .content__main .container .creation .box__creator .content__details .article__category{
+        padding: 0 20px;
+    }
+
+
+    main .content__main .container .creation .box__creator .content__details .article__category .category .icon{
+        margin-left: 45%;
+    }
+
+    /*article creation section: content*/
+
+    main .content__main .container .creation .box__creator .content__create{
+        padding: 0;
+    }
+
+    main .content__main .container .creation .box__creator .content__create .textarea__content{
+        width: 80%;
+        padding: 10px;
+    }
+
+    /*article creation section: visibility*/
+    main .content__main .container .creation .box__creator .content .content__visibility .box__visibility .visibility .icon{
+        margin-left: 45%;
     }
 }
 

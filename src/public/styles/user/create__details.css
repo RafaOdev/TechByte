@@ -52,8 +52,7 @@ main .content__main .container .creation .box__creator .content .text p{
     padding: 9px 0px;
 }
 
-
-/*Details article name*/
+/*content*/
 main .content__main .container .creation .box__creator .content__details{
     display: none;
 }
@@ -63,6 +62,7 @@ main .content__main .container .creation .box__creator .content__details.select{
     flex-direction: column;
 }
 
+/*article name details*/
 
 main .content__main .container .creation .box__creator .content__details .article__name{
     display: flex;
@@ -89,7 +89,7 @@ main .content__main .container .creation .box__creator .content__details .articl
     color: white;
 }
 
-/*Details article desc*/
+/*article desc details*/
 
 main .content__main .container .creation .box__creator .content__details .article__desc{
     display: flex;
@@ -118,7 +118,7 @@ main .content__main .container .creation .box__creator .content__details .articl
     color: white;
 }
 
-/*Details article category*/
+/*article category details*/
 
 main .content__main .container .creation .box__creator .content__details .article__category{
     display: flex;

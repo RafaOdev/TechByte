@@ -70,7 +70,7 @@ main .sidebar .left__nav .nav__list ol{
 }
 
 main .sidebar .left__nav .nav__list ol li{
-   font-size: 1.02rem; 
+   font-size: .875rem; 
    padding: 15px 10px;
    border-radius: 10px;
    color: rgba(255,255,255,0.6);
@@ -88,7 +88,7 @@ main .sidebar .left__nav .nav__list ol li.activate{
 }
 
 main .sidebar .left__nav .nav__list ol li i{
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 600;
     padding: 0px 10px;
     color: white;
