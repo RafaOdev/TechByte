@@ -22,6 +22,8 @@ btns.forEach((btn, i) => {
     });
 });
 
+//test
+
 let timeOut = function(activateClass){
     let activate = document.getElementsByClassName('activate');
     let i = 1;

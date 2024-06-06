@@ -4,7 +4,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
     height: 4.2rem; /* 80px convertido para 5rem */
     position: fixed;
     top: 0;
@@ -148,9 +148,7 @@ header .header__userprofile {
     justify-content: center;
     align-items: center;
     justify-content: space-between;
-    margin-right: 1.875rem; /* 30px convertido para 1.875rem */
-    width: 5rem; /* 80px convertido para 5rem */
-    height: 2.375rem; /* 38px convertido para 2.375rem */
+    margin-right: 1.575rem;
 }
 
 header .header__userprofile__button {
